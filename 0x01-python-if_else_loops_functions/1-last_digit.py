@@ -15,4 +15,3 @@ elif last_digit < 6:
 
 else:
     print("\n")
-

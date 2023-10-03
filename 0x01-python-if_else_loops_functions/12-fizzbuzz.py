@@ -14,4 +14,3 @@ def fizzbuzz():
 
         else:
             print("{} ".format(i), end="")
-

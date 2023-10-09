@@ -2,10 +2,10 @@
 
 def no_c(my_string):
 
-    for i in range(len(my_string)):
+    new_string = ""
 
-        if i in my_string del ['c' ,'C']:
+    for char in my_string:
+        if char not in ['c', 'C']:
+            new_string += char
 
-            new_list = my_list[i]
-
-            return (new_list)
+    return (new_string)

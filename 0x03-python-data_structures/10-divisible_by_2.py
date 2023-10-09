@@ -12,4 +12,3 @@ def divisible_by_2(my_list=[]):
             multi_2.append(False)
 
     return (multi_2)
-

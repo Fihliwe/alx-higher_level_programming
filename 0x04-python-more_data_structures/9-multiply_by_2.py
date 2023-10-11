@@ -2,8 +2,10 @@
 
 def multiply_by_2(a_dictionary):
 
-    for num in a_dictionary:
+    2_dict = a_dictionary.copy()
+    list_keys = list(2_dict.keys())
 
-        num = num % 2
+    for i in list_keys:
+        2_dict[i] *= 2
 
-    return (a_dictionary)
+    return (2_dict)

@@ -4,7 +4,7 @@
      try:
          division = a / b
      
-     except (TypeError, ZeroDivisionError):
+     except (ZeroDivisionError):
          division = None
      
      finally:

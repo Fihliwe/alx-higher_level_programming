@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-"""Define class for rectangle"""
+"""rectangle module"""
+
+
 
 class Rectangle:
     """class for rectangle"""
@@ -21,13 +23,13 @@ class Rectangle:
     @property
     def width(self):
         """define width and return it"""
-        return (width)
+        return (self.__width)
 
     @setter.width
     def width(self, value):
         """define width with value and set it"""
 
-        value = width
+        value = self.__width
         if value != int():
             raise TypeError("width must be an integer")
         
@@ -37,12 +39,12 @@ class Rectangle:
     @property
     def height(self):
         """define height and return it"""
-        return(height)
+        return(self.__height)
 
     @setter.height
     def height(self, value):
         """define height with value and set it"""
-        value = height
+        value = self.__height
         if value != int():
             raise TypeError("height must be an integer")
         

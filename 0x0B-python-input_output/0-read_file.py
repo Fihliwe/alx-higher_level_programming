@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """Module for read_file function."""
 
 def read_file(filename=""):

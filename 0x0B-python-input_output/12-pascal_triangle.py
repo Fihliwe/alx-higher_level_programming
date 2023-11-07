@@ -3,7 +3,7 @@
 
 
 def pascal_triangle(n):
-    ''' that returns a list of lists of integers'''
+    '''that returns a list of lists of integers'''
     if n <= 0:
         return ([])
     

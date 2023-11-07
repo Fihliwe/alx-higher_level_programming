@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' module for student class'''
+'''module for student class'''
 
 
 class Student:

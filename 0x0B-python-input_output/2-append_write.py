@@ -3,6 +3,6 @@
 
 
 def append_write(filename="", text=""):
-    '''appends a string to the end of a file'''    
+    '''appends a string to the end of a file'''
     with open(filename, "a", encoding="UTF-8") as f:
         return (f.write(text))

@@ -5,7 +5,6 @@
 class Student:
     '''defines a stdudent'''
 
-
     def __init__(self, first_name, last_name, age):
         '''initializing public instances'''
         self.first_name = first_name

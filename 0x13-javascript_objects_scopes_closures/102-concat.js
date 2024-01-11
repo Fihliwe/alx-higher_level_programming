@@ -1,4 +1,5 @@
 #!/usr/bin/node
+// this module concattenates
 
 const fs = require('fs').promises;
 const { argv } = require('process');

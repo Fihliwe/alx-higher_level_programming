@@ -9,7 +9,7 @@ from sys import argv
 if __name__ == '__main__':
 
     '''make a connection to the database'''
-    data_base = MySQLdb.connect(host="localhost", port=3306, mysql_username=argv[1], mysql_password=argv[2], data_base_name=argv[3])\
+    data_base = MySQLdb.connect(host="localhost", port=3306, mysql_username=argv[1], mysql_password=argv[2], data_base_name=argv[3])
     
     '''creating a cursor object to execute SQL quaeries'''
     cursor = data_base.cursor()

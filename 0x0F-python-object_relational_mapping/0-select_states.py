@@ -6,7 +6,7 @@ from sys import argv
 import MySQLdb
 
 
-def main():
+def main_0_select():
     """
     Connecting to database and retrieving the state names
     """
@@ -29,4 +29,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main_0_select()

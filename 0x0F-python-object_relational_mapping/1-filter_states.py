@@ -22,9 +22,7 @@ def main_1_filter():
     rows = cur.fetchall()
     for i in rows:
         print(i)
-    # Clean up process
-    cur.close()
-    db.close()
-# The code should not be executed when imported
+   
+   
 if __name__ == '__main__':
    main_1_filter()

@@ -1,26 +1,23 @@
 #!/usr/bin/python3
-'''Module that lists states from the hbtn_0e_0_usa'''
+""" Script that lists all states from the database hbtn_0e_0_usa """
 import MySQLdb
 from sys import argv
 
-
-
-'''The code should not be executed when imported so (if main) should be used'''
+# The code should not be executed when imported
 if __name__ == '__main__':
 
-    '''make a connection to the database'''
-    data_base = MySQLdb.connect(host="localhost", port=3306, mysql_username=argv[1], mysql_password=argv[2], data_base_name=argv[3])
-    
-    '''creating a cursor object to execute SQL quaeries'''
-    cursor = data_base.cursor()
-    query = "SELECT *FROM states"
-    cursor.execute(query)
+    # make a connection to the database
+    db = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
+                         passwd=argv[2], db=argv[3])
 
-    '''iterate trough to show the results'''
-    rows = cursor.fetchall()
+    # It gives us the ability to have multiple seperate working environments
+    # through the same connection to the database.
+    cur = db.cursor()
+    cur.execute("SELECT * FROM states")
+
+    rows = cur.fetchall()
     for i in rows:
         print(i)
-
-    '''close the cursor and database connection'''
-    cursor.close()
-    data_base.close()
+    # Clean up process
+    cur.close()
+    db.close()

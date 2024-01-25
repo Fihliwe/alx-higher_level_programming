@@ -4,7 +4,6 @@
 
 def find_peak(list_of_integers):
     """function that finds a peak in a list of unsorted integers."""
-
     list_ = list_of_integers
     
     if list_ =[]:
